@@ -22,34 +22,66 @@ mutate(across(where(is.character), as.factor))
 ### This data was retrieved from a downloadable zip file from kaggle
 
 Some of the data was uncoded for sex - sex must be just male or female
-77 of the data entries were coded sex  as blank, so we omit these.
+77 of the data entries were coded sex as blank, so we omit these.
 state of a patient must be died or alive - we adjust that as well   
   
 # Your Question - Is dying independent of sex?
 
 
+# Introduction 
+
+$H_0$: There is no difference in death rate based on gender. 
+
+$H_A$: There is a difference in death rate based on gender. 
 
 
+
+# Methods
+Variables for this study are Sex and result. 
+
+We want to find out if result depends on sex. Result is a categorical variable, sex is a categorical variable. 
+
+So we use the Cat ~ Cat helper file. 
+
+# Results 
 
 
 ## Graphical results - use ggplot commands to do this  
 
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
 
+```
   
+This chart shows me that of all those who have dies, 60% of those were males and about 40% of those who dies are females. 
 
 
-
-
-
-  
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows that 
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
+The Chi-squared test (p-value: 0.012) this shows... This means that this is/is not significant difference in death rate based on sex
 
+The p-value on the Fisher Exact test is 9e-04. 
+
+The odds ratio is 2.3:1, this means 
 
 ## Conclusions
 
+The original question was "is there a difference in death rate in the Korean data set based on sex?" The plot indicated ... The numerical result was... We found a death rate difference due to sex was significant
