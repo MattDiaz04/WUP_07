@@ -66,7 +66,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The table shows that 
+This table shows the average male deaths are higher than female deaths at 64 deaths vs female death 36.
 
 ## Inferential results 
 
