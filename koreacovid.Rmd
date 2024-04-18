@@ -88,7 +88,5 @@ The original question was was "is there a difference in death rate in the Korean
 
 The plot indicates that male death is higher on average being 60% and female average below 40%
 
-
-The numericaL result shows the average male deaths are higher than female deaths at 64 deaths vs female death 36.
-and we found there is a significant death rate difference due to Sex.
+The numerical result shows the average male deaths are higher than female deaths at 64 deaths vs female death 36. We were able to conclude that there is a significant death rate difference due to Sex.
 
