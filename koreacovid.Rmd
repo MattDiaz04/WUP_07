@@ -80,9 +80,5 @@ The Chi-squared test p-value is 0.0012 which is less than 0.05 so we will reject
 
 ## Conclusions
 
-The original question was was "is there a difference in death rate in the Korean data set based on Sex?
-
-The plot indicates that male death is higher on average being 60% and female average below 40%
-
-The numerical result shows the average male deaths are higher than female deaths at 64 deaths vs female death 36. We were able to conclude that there is a significant death rate difference due to Sex.
+The original question was was "is there a difference in death rate in the Korean data set based on Sex? The significantly low p-value that was obtained during both tests indicates that the association is statistically significant. Due to this, we reject the null hypothesis that states there is no association between death rate and gender. We conclude that there is a difference between death rate and gender seeing that males and females show different outcomes. 
 
