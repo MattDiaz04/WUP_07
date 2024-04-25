@@ -76,11 +76,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The Chi-squared test (p-value: 0.012) this shows... This means that this is/is not significant difference in death rate based on sex
-
-The p-value on the Fisher Exact test is 9e-04. 
-
-The odds ratio is 2.3:1, this means 
+The Chi-squared test p-value is 0.0012 which is less than 0.05 so we will reject the null hypothesis and say that there is a difference between death rate based on sex. In conclusion, these results indicate a statistically significant association between the variables with an estimated odds ratio of 2.3 and a 95% confidence interval ranging from 1.4 to 3.9. 
 
 ## Conclusions
 
